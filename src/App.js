@@ -20,7 +20,7 @@ const HomeScreen = () => {
       </View>
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
         <Text>back-icon.png (require'd): </Text>
-        <Image source={require('../node_modules/@react-navigation/stack/src/views/assets/back-icon.png')} style={styles.icon} />
+        <Image source={require('../node_modules/@react-navigation/stack/src/views/assets/back-icon.png').default} style={styles.icon} />
       </View>
       <View style={{ flexDirection: 'row', alignItems: 'center', paddingTop: 10 }}>
         <Text>back-icon.png (import'ed): </Text>
@@ -77,6 +77,7 @@ export default App
 //   Linking,
 // } from 'react-native';
 // import logo from './logo.png';
+// // const logo = require('./logo.png');
 
 // const isNative = Platform.OS !== 'web';
 
