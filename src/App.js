@@ -18,14 +18,14 @@ const HomeScreen = () => {
         <Text>HeaderBackButton component: </Text>
         <HeaderBackButton />
       </View>
-      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+      {/* <View style={{ flexDirection: 'row', alignItems: 'center' }}>
         <Text>back-icon.png (require'd): </Text>
         <Image source={require('../node_modules/@react-navigation/stack/src/views/assets/back-icon.png').default} style={styles.icon} />
       </View>
       <View style={{ flexDirection: 'row', alignItems: 'center', paddingTop: 10 }}>
         <Text>back-icon.png (import'ed): </Text>
         <Image source={back_icon} style={styles.icon} />
-      </View>
+      </View> */}
     </View>
   )
 }
