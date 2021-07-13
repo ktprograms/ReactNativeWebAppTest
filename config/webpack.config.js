@@ -62,16 +62,18 @@ const sassRegex = /\.(scss|sass)$/;
 const sassModuleRegex = /\.module\.(scss|sass)$/;
 
 const hasJsxRuntime = (() => {
-  if (process.env.DISABLE_NEW_JSX_TRANSFORM === 'true') {
-    return false;
-  }
+  return false;
 
-  try {
-    require.resolve('react/jsx-runtime');
-    return true;
-  } catch (e) {
-    return false;
-  }
+  // if (process.env.DISABLE_NEW_JSX_TRANSFORM === 'true') {
+  //   return false;
+  // }
+
+  // try {
+  //   require.resolve('react/jsx-runtime');
+  //   return true;
+  // } catch (e) {
+  //   return false;
+  // }
 })();
 
 // This is the production and development configuration.
